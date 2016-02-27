@@ -20,10 +20,6 @@ mongoose.connect('mongodb://localhost/mylan', function(err) {
   }
 });
 
-var options = {
-  key: fs.readFileSync('file.pem'),
-  cert: fs.readFileSync('file.crt')
-};
 // Populate databases with sample data
 if (config.seedDB) { require('./config/seed'); }
 
