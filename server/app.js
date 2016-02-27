@@ -9,12 +9,15 @@ import mongoose from 'mongoose';
 mongoose.Promise = require('bluebird');
 import config from './config/environment';
 import http from 'http';
-
+var fs = require('fs');
+var https = require('https');
 // Connect to MongoDB
-mongoose.connect(config.mongo.uri, config.mongo.options);
-mongoose.connection.on('error', function(err) {
-  console.error('MongoDB connection error: ' + err);
-  process.exit(-1);
+mongoose.connect('mongodb://localhost/mylan', function(err) {
+  if(err) {
+    console.log('MONGO CONNECTION ERROR', err);
+  } else {
+    console.log('MONGO CONNECTION SUCCESSFUL');
+  }
 });
 
 // Populate databases with sample data
@@ -22,7 +25,8 @@ if (config.seedDB) { require('./config/seed'); }
 
 // Setup server
 var app = express();
-var server = http.createServer(app);
+//var server = https.createServer(options, app);
+var server=http.createServer(app);
 var socketio = require('socket.io')(server, {
   serveClient: config.env !== 'production',
   path: '/socket.io-client'
@@ -30,7 +34,6 @@ var socketio = require('socket.io')(server, {
 require('./config/socketio')(socketio);
 require('./config/express')(app);
 require('./routes')(app);
-
 // Start server
 function startServer() {
   app.angularFullstack = server.listen(config.port, config.ip, function() {
