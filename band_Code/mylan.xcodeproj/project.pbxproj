@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2ABEFEB1C8143F800EE8C88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ABEFEA1C8143F800EE8C88 /* AppDelegate.swift */; };
+		D2ABEFED1C8143F800EE8C88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ABEFEC1C8143F800EE8C88 /* ViewController.swift */; };
+		D2ABEFF01C8143F800EE8C88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2ABEFEE1C8143F800EE8C88 /* Main.storyboard */; };
+		D2ABEFF31C8143F800EE8C88 /* mylan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2ABEFF11C8143F800EE8C88 /* mylan.xcdatamodeld */; };
+		D2ABEFF51C8143F800EE8C88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2ABEFF41C8143F800EE8C88 /* Assets.xcassets */; };
+		D2ABEFF81C8143F800EE8C88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2ABEFF61C8143F800EE8C88 /* LaunchScreen.storyboard */; };
+		D2ABF0031C8143F800EE8C88 /* mylanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ABF0021C8143F800EE8C88 /* mylanTests.swift */; };
+		D2ABF00E1C8143F800EE8C88 /* mylanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ABF00D1C8143F800EE8C88 /* mylanUITests.swift */; };
+		D2ABF01F1C81469100EE8C88 /* MicrosoftBandKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2ABF01E1C81469100EE8C88 /* MicrosoftBandKit_iOS.framework */; };
+		D2ABF0211C8146B200EE8C88 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2ABF0201C8146B200EE8C88 /* CoreBluetooth.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2ABEFFF1C8143F800EE8C88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2ABEFDF1C8143F800EE8C88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2ABEFE61C8143F800EE8C88;
+			remoteInfo = mylan;
+		};
+		D2ABF00A1C8143F800EE8C88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2ABEFDF1C8143F800EE8C88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2ABEFE61C8143F800EE8C88;
+			remoteInfo = mylan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D2ABEFE71C8143F800EE8C88 /* mylan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mylan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2ABEFEA1C8143F800EE8C88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D2ABEFEC1C8143F800EE8C88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D2ABEFEF1C8143F800EE8C88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2ABEFF21C8143F800EE8C88 /* mylan.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = mylan.xcdatamodel; sourceTree = "<group>"; };
+		D2ABEFF41C8143F800EE8C88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2ABEFF71C8143F800EE8C88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D2ABEFF91C8143F800EE8C88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2ABEFFE1C8143F800EE8C88 /* mylanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mylanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2ABF0021C8143F800EE8C88 /* mylanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mylanTests.swift; sourceTree = "<group>"; };
+		D2ABF0041C8143F800EE8C88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2ABF0091C8143F800EE8C88 /* mylanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mylanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2ABF00D1C8143F800EE8C88 /* mylanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mylanUITests.swift; sourceTree = "<group>"; };
+		D2ABF00F1C8143F800EE8C88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2ABF01E1C81469100EE8C88 /* MicrosoftBandKit_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MicrosoftBandKit_iOS.framework; sourceTree = "<group>"; };
+		D2ABF0201C8146B200EE8C88 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		D2ABF0221C814F8E00EE8C88 /* HeaderBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HeaderBridge.h; path = ../HeaderBridge.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2ABEFE41C8143F800EE8C88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2ABF0211C8146B200EE8C88 /* CoreBluetooth.framework in Frameworks */,
+				D2ABF01F1C81469100EE8C88 /* MicrosoftBandKit_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2ABEFFB1C8143F800EE8C88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2ABF0061C8143F800EE8C88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D2ABEFDE1C8143F800EE8C88 = {
+			isa = PBXGroup;
+			children = (
+				D2ABF0201C8146B200EE8C88 /* CoreBluetooth.framework */,
+				D2ABF01E1C81469100EE8C88 /* MicrosoftBandKit_iOS.framework */,
+				D2ABEFE91C8143F800EE8C88 /* mylan */,
+				D2ABF0011C8143F800EE8C88 /* mylanTests */,
+				D2ABF00C1C8143F800EE8C88 /* mylanUITests */,
+				D2ABEFE81C8143F800EE8C88 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D2ABEFE81C8143F800EE8C88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2ABEFE71C8143F800EE8C88 /* mylan.app */,
+				D2ABEFFE1C8143F800EE8C88 /* mylanTests.xctest */,
+				D2ABF0091C8143F800EE8C88 /* mylanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2ABEFE91C8143F800EE8C88 /* mylan */ = {
+			isa = PBXGroup;
+			children = (
+				D2ABF0221C814F8E00EE8C88 /* HeaderBridge.h */,
+				D2ABEFEA1C8143F800EE8C88 /* AppDelegate.swift */,
+				D2ABEFEC1C8143F800EE8C88 /* ViewController.swift */,
+				D2ABEFEE1C8143F800EE8C88 /* Main.storyboard */,
+				D2ABEFF41C8143F800EE8C88 /* Assets.xcassets */,
+				D2ABEFF61C8143F800EE8C88 /* LaunchScreen.storyboard */,
+				D2ABEFF91C8143F800EE8C88 /* Info.plist */,
+				D2ABEFF11C8143F800EE8C88 /* mylan.xcdatamodeld */,
+			);
+			path = mylan;
+			sourceTree = "<group>";
+		};
+		D2ABF0011C8143F800EE8C88 /* mylanTests */ = {
+			isa = PBXGroup;
+			children = (
+				D2ABF0021C8143F800EE8C88 /* mylanTests.swift */,
+				D2ABF0041C8143F800EE8C88 /* Info.plist */,
+			);
+			path = mylanTests;
+			sourceTree = "<group>";
+		};
+		D2ABF00C1C8143F800EE8C88 /* mylanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D2ABF00D1C8143F800EE8C88 /* mylanUITests.swift */,
+				D2ABF00F1C8143F800EE8C88 /* Info.plist */,
+			);
+			path = mylanUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2ABEFE61C8143F800EE8C88 /* mylan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2ABF0121C8143F800EE8C88 /* Build configuration list for PBXNativeTarget "mylan" */;
+			buildPhases = (
+				D2ABEFE31C8143F800EE8C88 /* Sources */,
+				D2ABEFE41C8143F800EE8C88 /* Frameworks */,
+				D2ABEFE51C8143F800EE8C88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mylan;
+			productName = mylan;
+			productReference = D2ABEFE71C8143F800EE8C88 /* mylan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2ABEFFD1C8143F800EE8C88 /* mylanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2ABF0151C8143F800EE8C88 /* Build configuration list for PBXNativeTarget "mylanTests" */;
+			buildPhases = (
+				D2ABEFFA1C8143F800EE8C88 /* Sources */,
+				D2ABEFFB1C8143F800EE8C88 /* Frameworks */,
+				D2ABEFFC1C8143F800EE8C88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2ABF0001C8143F800EE8C88 /* PBXTargetDependency */,
+			);
+			name = mylanTests;
+			productName = mylanTests;
+			productReference = D2ABEFFE1C8143F800EE8C88 /* mylanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D2ABF0081C8143F800EE8C88 /* mylanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2ABF0181C8143F800EE8C88 /* Build configuration list for PBXNativeTarget "mylanUITests" */;
+			buildPhases = (
+				D2ABF0051C8143F800EE8C88 /* Sources */,
+				D2ABF0061C8143F800EE8C88 /* Frameworks */,
+				D2ABF0071C8143F800EE8C88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2ABF00B1C8143F800EE8C88 /* PBXTargetDependency */,
+			);
+			name = mylanUITests;
+			productName = mylanUITests;
+			productReference = D2ABF0091C8143F800EE8C88 /* mylanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2ABEFDF1C8143F800EE8C88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "swaroop akkineni";
+				TargetAttributes = {
+					D2ABEFE61C8143F800EE8C88 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					D2ABEFFD1C8143F800EE8C88 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = D2ABEFE61C8143F800EE8C88;
+					};
+					D2ABF0081C8143F800EE8C88 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = D2ABEFE61C8143F800EE8C88;
+					};
+				};
+			};
+			buildConfigurationList = D2ABEFE21C8143F800EE8C88 /* Build configuration list for PBXProject "mylan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2ABEFDE1C8143F800EE8C88;
+			productRefGroup = D2ABEFE81C8143F800EE8C88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2ABEFE61C8143F800EE8C88 /* mylan */,
+				D2ABEFFD1C8143F800EE8C88 /* mylanTests */,
+				D2ABF0081C8143F800EE8C88 /* mylanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2ABEFE51C8143F800EE8C88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2ABEFF81C8143F800EE8C88 /* LaunchScreen.storyboard in Resources */,
+				D2ABEFF51C8143F800EE8C88 /* Assets.xcassets in Resources */,
+				D2ABEFF01C8143F800EE8C88 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2ABEFFC1C8143F800EE8C88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2ABF0071C8143F800EE8C88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2ABEFE31C8143F800EE8C88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2ABEFED1C8143F800EE8C88 /* ViewController.swift in Sources */,
+				D2ABEFEB1C8143F800EE8C88 /* AppDelegate.swift in Sources */,
+				D2ABEFF31C8143F800EE8C88 /* mylan.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2ABEFFA1C8143F800EE8C88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2ABF0031C8143F800EE8C88 /* mylanTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2ABF0051C8143F800EE8C88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2ABF00E1C8143F800EE8C88 /* mylanUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2ABF0001C8143F800EE8C88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2ABEFE61C8143F800EE8C88 /* mylan */;
+			targetProxy = D2ABEFFF1C8143F800EE8C88 /* PBXContainerItemProxy */;
+		};
+		D2ABF00B1C8143F800EE8C88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2ABEFE61C8143F800EE8C88 /* mylan */;
+			targetProxy = D2ABF00A1C8143F800EE8C88 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D2ABEFEE1C8143F800EE8C88 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2ABEFEF1C8143F800EE8C88 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D2ABEFF61C8143F800EE8C88 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2ABEFF71C8143F800EE8C88 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2ABF0101C8143F800EE8C88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2ABF0111C8143F800EE8C88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2ABF0131C8143F800EE8C88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = mylan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = simulation.mylan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = HeaderBridge.h;
+			};
+			name = Debug;
+		};
+		D2ABF0141C8143F800EE8C88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = mylan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = simulation.mylan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D2ABF0161C8143F800EE8C88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = mylanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = simulation.mylanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mylan.app/mylan";
+			};
+			name = Debug;
+		};
+		D2ABF0171C8143F800EE8C88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = mylanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = simulation.mylanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mylan.app/mylan";
+			};
+			name = Release;
+		};
+		D2ABF0191C8143F800EE8C88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = mylanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = simulation.mylanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = mylan;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		D2ABF01A1C8143F800EE8C88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = mylanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = simulation.mylanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = mylan;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2ABEFE21C8143F800EE8C88 /* Build configuration list for PBXProject "mylan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2ABF0101C8143F800EE8C88 /* Debug */,
+				D2ABF0111C8143F800EE8C88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2ABF0121C8143F800EE8C88 /* Build configuration list for PBXNativeTarget "mylan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2ABF0131C8143F800EE8C88 /* Debug */,
+				D2ABF0141C8143F800EE8C88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2ABF0151C8143F800EE8C88 /* Build configuration list for PBXNativeTarget "mylanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2ABF0161C8143F800EE8C88 /* Debug */,
+				D2ABF0171C8143F800EE8C88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2ABF0181C8143F800EE8C88 /* Build configuration list for PBXNativeTarget "mylanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2ABF0191C8143F800EE8C88 /* Debug */,
+				D2ABF01A1C8143F800EE8C88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D2ABEFF11C8143F800EE8C88 /* mylan.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D2ABEFF21C8143F800EE8C88 /* mylan.xcdatamodel */,
+			);
+			currentVersion = D2ABEFF21C8143F800EE8C88 /* mylan.xcdatamodel */;
+			path = mylan.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D2ABEFDF1C8143F800EE8C88 /* Project object */;
+}
