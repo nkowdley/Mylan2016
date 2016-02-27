@@ -11,12 +11,13 @@ import config from './config/environment';
 import http from 'http';
 
 // Connect to MongoDB
-mongoose.connect(config.mongo.uri, config.mongo.options);
-mongoose.connection.on('error', function(err) {
-  console.error('MongoDB connection error: ' + err);
-  process.exit(-1);
+mongoose.connect('mongodb://localhost/mylan', function(err) {
+  if(err) {
+    console.log('MONGO CONNECTION ERROR', err);
+  } else {
+    console.log('MONGO CONNECTION SUCCESSFUL');
+  }
 });
-
 // Populate databases with sample data
 if (config.seedDB) { require('./config/seed'); }
 
@@ -30,7 +31,6 @@ var socketio = require('socket.io')(server, {
 require('./config/socketio')(socketio);
 require('./config/express')(app);
 require('./routes')(app);
-
 // Start server
 function startServer() {
   app.angularFullstack = server.listen(config.port, config.ip, function() {
