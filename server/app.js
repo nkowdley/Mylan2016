@@ -9,7 +9,8 @@ import mongoose from 'mongoose';
 mongoose.Promise = require('bluebird');
 import config from './config/environment';
 import http from 'http';
-
+var fs = require('fs');
+var https = require('https');
 // Connect to MongoDB
 mongoose.connect('mongodb://localhost/mylan', function(err) {
   if(err) {
@@ -18,12 +19,18 @@ mongoose.connect('mongodb://localhost/mylan', function(err) {
     console.log('MONGO CONNECTION SUCCESSFUL');
   }
 });
+
+var options = {
+  key: fs.readFileSync('file.pem'),
+  cert: fs.readFileSync('file.crt')
+};
 // Populate databases with sample data
 if (config.seedDB) { require('./config/seed'); }
 
 // Setup server
 var app = express();
-var server = http.createServer(app);
+//var server = https.createServer(options, app);
+var server=http.createServer(app);
 var socketio = require('socket.io')(server, {
   serveClient: config.env !== 'production',
   path: '/socket.io-client'

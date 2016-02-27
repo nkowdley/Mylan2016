@@ -1,7 +1,7 @@
 /**
  * Main application routes
  */
-
+var express = require('express');
 'use strict';
 
 import errors from './components/errors';
@@ -9,11 +9,13 @@ import path from 'path';
 
 export default function(app) {
   // Insert routes below
+  app.use(express.static('file'));
   app.use('/api/things', require('./api/thing'));
   app.use('/', require('./routes/index.js'));
   app.use('/alldata', require('./routes/alldata.js'));
   app.use('/update', require('./routes/updateinfo.js'));
   app.use('/getdata', require('./routes/getuserdata.js'));
+  app.use('/static', express.static('file'));
   //test pages
   app.use('/update_test', require('./routes/updatetest.js'));
   app.use('/get_test', require('./routes/gettest.js'));
