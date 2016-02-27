@@ -3,11 +3,12 @@ $(function() {
   Chart.defaults.global.responsive = true;
   ctx = $('#jumbotron-line-chart').get(0).getContext('2d');
   options = {
-    showScale: false,
+    showScale: true,
+    showXLabels: 1,
     scaleShowGridLines: false,
     scaleGridLineColor: "rgba(0,0,0,.05)",
     scaleGridLineWidth: 0,
-    scaleShowHorizontalLines: false,
+    scaleShowHorizontalLines: true,
     scaleShowVerticalLines: false,
     bezierCurve: false,
     bezierCurveTension: 0.4,
@@ -18,20 +19,21 @@ $(function() {
     datasetStroke: true,
     datasetStrokeWidth: 4,
     datasetFill: true,
-    legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].strokeColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
+    showToolTip: false,
+    tooltipTemplate: "",
   };
   data = {
-    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+    labels: accel_length,
     datasets: [
       {
-        label: "My Second dataset",
+        label: "Acceleration Frequency",
         fillColor: "rgba(34, 167, 240,0.2)",
         strokeColor: "#22A7F0",
         pointColor: "#22A7F0",
         pointStrokeColor: "#fff",
         pointHighlightFill: "#fff",
         pointHighlightStroke: "#22A7F0",
-        data: [28, 48, 40, 45, 76, 65, 90]
+        data: accel_amp
       }
     ]
   };
@@ -39,51 +41,48 @@ $(function() {
 });
 
 $(function() {
-  var ctx, data, myBarChart, option_bars;
+  var ctx, data, myLineChart, options;
   Chart.defaults.global.responsive = true;
-  ctx = $('#jumbotron-bar-chart').get(0).getContext('2d');
-  option_bars = {
-    showScale: false,
+  ctx = $('#jumbotron-line-3-chart').get(0).getContext('2d');
+  options = {
+    showScale: true,
     scaleShowGridLines: false,
-    scaleBeginAtZero: true,
-    scaleShowGridLines: true,
     scaleGridLineColor: "rgba(0,0,0,.05)",
-    scaleGridLineWidth: 1,
+    scaleGridLineWidth: 0,
     scaleShowHorizontalLines: false,
-    scaleShowVerticalLines: false,
-    barShowStroke: true,
-    barStrokeWidth: 1,
-    barValueSpacing: 7,
-    barDatasetSpacing: 3,
-    legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].fillColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
+    scaleShowVerticalLines: true,
+    bezierCurve: false,
+    bezierCurveTension: 0.4,
+    pointDot: false,
+    pointDotRadius: 0,
+    pointDotStrokeWidth: 2,
+    pointHitDetectionRadius: 20,
+    datasetStroke: true,
+    datasetStrokeWidth: 3,
+    datasetFill: true,
+    showToolTip: false,
+    tooltipTemplate: "",
+    legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].strokeColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
   };
   data = {
-    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+    labels: accel_length,
     datasets: [
       {
         label: "My First dataset",
-        fillColor: "rgba(26, 188, 156,0.6)",
+        fillColor: "rgba(26, 188, 156,0.2)",
         strokeColor: "#1ABC9C",
         pointColor: "#1ABC9C",
         pointStrokeColor: "#fff",
         pointHighlightFill: "#fff",
         pointHighlightStroke: "#1ABC9C",
-        data: [65, 59, 80, 81, 56, 55, 40]
-      }, {
-        label: "My Second dataset",
-        fillColor: "rgba(34, 167, 240,0.6)",
-        strokeColor: "#22A7F0",
-        pointColor: "#22A7F0",
-        pointStrokeColor: "#fff",
-        pointHighlightFill: "#fff",
-        pointHighlightStroke: "#22A7F0",
-        data: [28, 48, 40, 19, 86, 27, 90]
+        data: gyro_amp
       }
     ]
   };
-  myBarChart = new Chart(ctx).Bar(data, option_bars);
+  myLineChart = new Chart(ctx).Line(data, options);
 });
 
+/*
 $(function() {
   var ctx, data, myLineChart, options;
   Chart.defaults.global.responsive = true;
@@ -94,7 +93,7 @@ $(function() {
     scaleGridLineColor: "rgba(0,0,0,.05)",
     scaleGridLineWidth: 0,
     scaleShowHorizontalLines: false,
-    scaleShowVerticalLines: false,
+    scaleShowVerticalLines: true,
     bezierCurve: false,
     bezierCurveTension: 0.4,
     pointDot: false,
@@ -104,12 +103,14 @@ $(function() {
     datasetStroke: true,
     datasetStrokeWidth: 3,
     datasetFill: true,
+    showToolTip: false,
+    tooltipTemplate: "",
     legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].strokeColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
   };
   data = {
-    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+    labels: accel_length,
     datasets: [
-      {
+     {
         label: "My First dataset",
         fillColor: "rgba(26, 188, 156,0.2)",
         strokeColor: "#1ABC9C",
@@ -117,8 +118,8 @@ $(function() {
         pointStrokeColor: "#fff",
         pointHighlightFill: "#fff",
         pointHighlightStroke: "#1ABC9C",
-        data: [65, 59, 80, 81, 56, 55, 40]
-      }, {
+        data: hr_avg
+      },{
         label: "My Second dataset",
         fillColor: "rgba(34, 167, 240,0.2)",
         strokeColor: "#22A7F0",
@@ -126,9 +127,11 @@ $(function() {
         pointStrokeColor: "#fff",
         pointHighlightFill: "#fff",
         pointHighlightStroke: "#22A7F0",
-        data: [28, 48, 40, 19, 86, 27, 90]
+        data: skin_temp
       }
     ]
   };
   myLineChart = new Chart(ctx).Line(data, options);
 });
+
+*/
